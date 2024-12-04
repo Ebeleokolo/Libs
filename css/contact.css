@@ -1,0 +1,165 @@
+.footer {
+    width: 100%;
+}
+  
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+  
+/* Contact Info Section */
+.contact-info-section {
+    width: 100%;
+    padding: 16px;
+    background-color: #f0f1fc;
+}
+  
+.contact-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #003366;
+}
+  
+.contact-details {
+    color: #003366;
+}
+  
+.contact-description {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+  
+.contact-info {
+    font-size: 14px;
+}
+  
+/* Form Section */
+.form-section {
+    width: 100%;
+    padding: 16px;
+    background-color: white;
+}
+  
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+  
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+  
+.form-group {
+    flex: 1;
+}
+  
+.form-input,
+.form-textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #1f2937;
+    padding: 8px 0;
+    outline: none;
+    font-size: 14px;
+}
+  
+.form-textarea {
+    resize: none;
+}
+  
+.form-submit {
+    display: flex;
+    justify-content: center;
+}
+  
+.submit-button {
+    position: relative;
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 16px;
+    text-align: center;
+    color: #003366;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+.submit-button:hover {
+    background-color: #7c3aed;
+    color: white;
+}
+  
+/* Footer Bottom */
+.footer-bottom {
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #7c3aed;
+    color: white;
+}
+  
+.footer-link {
+    text-decoration: underline;
+}
+  
+/* Media Queries */
+@media (min-width: 640px) {
+    .contact-info-section,
+    .form-section {
+        padding: 32px;
+    }
+  
+    .contact-title {
+        font-size: 30px;
+        margin-bottom: 24px;
+    }
+  
+    .contact-description,
+    .contact-info,
+    .form-input,
+    .form-textarea,
+    .submit-button {
+        font-size: 16px;
+    }
+  
+    .footer-bottom {
+        padding: 16px 32px;
+        font-size: 14px;
+    }
+}
+  
+@media (min-width: 1024px) {
+    .footer-content {
+        flex-direction: row;
+    }
+  
+    .contact-info-section {
+        width: 40%;
+        padding: 48px;
+    }
+  
+    .contact-title {
+        font-size: 48px;
+        margin-bottom: 32px;
+    }
+  
+    .form-section {
+        width: 60%;
+        padding: 48px;
+    }
+  
+    .form-row {
+        flex-direction: row;
+        gap: 24px;
+    }
+  
+    .contact-form {
+        gap: 24px;
+    }
+}

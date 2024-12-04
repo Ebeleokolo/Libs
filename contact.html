@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Global Care Foundation</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button id="menuButton" class="menu-button">
+                    <img src="assets/vec/toggleIcon.svg" alt="Menu" class="menu-icon">
+                </button>
+                
+                <a href="index.html#home" class="logo-link">
+                    <img src="assets/images/gfc.jpg" alt="CYBERNATE" class="logo">
+                </a>
+
+                <div class="desktop-nav">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="organisation.html" class="nav-link">Organisation</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Contact Info Section -->
+                <div class="contact-info-section">
+                    <h1 class="contact-title">Get in Touch</h1>
+                    
+                    <div class="contact-details">
+                        <p class="contact-description">
+                            Global Care Foundation  
+                            123 Hope Street, Unity Plaza, Springfield, USA
+                        </p>
+                        
+                        <div class="contact-info">
+                            <p>
+                                Email: <a href="mailto:info@globalcarefoundation.org">info@globalcarefoundation.org</a>
+                            </p>
+                            <p>
+                                Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Section -->
+                <div class="form-section">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    name="firstName"
+                                    placeholder="First name *"
+                                    required
+                                    class="form-input"
+                                />
+                            </div>
+                            
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    name="lastName"
+                                    placeholder="Last name *"
+                                    required
+                                    class="form-input"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email *"
+                                    required
+                                    class="form-input"
+                                />
+                            </div>
+                            
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Subject"
+                                    class="form-input"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea
+                                name="message"
+                                placeholder="Message"
+                                rows="4"
+                                class="form-textarea"
+                            ></textarea>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="submit-button">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer bottom section -->
+            <div class="footer-bottom">
+                © <span id="currentYear"></span> by Group 5. Powered and secured by Ebele Okolo
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

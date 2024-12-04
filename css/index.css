@@ -1,0 +1,109 @@
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.slider-section {
+    width: 100%;
+    height: 90%;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Left Content Styles */
+.content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f0f1fc;
+    padding: 24px;
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    color: #c047f4;
+    font-weight: 900;
+    margin-top: 8px;
+}
+
+.description {
+    font-size: 0.875rem;
+    line-height: 1.625;
+    margin-top: 16px;
+}
+
+.engage-button {
+    background: linear-gradient(to right, #a78bfa, #8b5cf6);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 4px;
+    margin-top: 24px;
+    border: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.engage-button:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.engage-button:active {
+    transform: scale(0.95);
+}
+
+/* Right Content Styles */
+.content-right {
+    width: 100%;
+    height: 100%;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Queries for mobile view*/
+@media (min-width: 768px) {
+    .slider-section {
+        flex-direction: row;
+        height: 80vh;
+    }
+
+    .content-left {
+        width: 40%;
+        padding: 64px;
+    }
+
+    .content-right {
+        width: 60%;
+    }
+
+    .welcome-text {
+        font-size: 1.5rem;
+    }
+
+    .company-name {
+        font-size: 1.875rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .engage-button {
+        font-size: 1rem;
+    }
+}

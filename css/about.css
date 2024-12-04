@@ -1,0 +1,110 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    padding-top: calc(8vh + 24px); /* This will match the navbar height plus padding */
+}
+
+/* History Section */
+.history {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #c047f4;
+    font-weight: 900;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.history-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #4a5568;
+}
+
+/* Organogram Section */
+.organogram {
+    margin: 80px 0;
+}
+
+.organogram svg {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #c047f4;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.card-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #4a5568;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 16px;
+        padding-top: calc(60px + 16px);
+    }
+
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .history {
+        padding-top: 1rem;
+    }
+}
+
+/* Additional responsive adjustments for larger screens */
+@media (min-width: 768px) {
+    .container {
+        padding-top: calc(80px + 24px);
+    }
+}
